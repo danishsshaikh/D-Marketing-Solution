@@ -1,0 +1,59 @@
+/* -------------------------------- 
+
+Scrub Effect
+
+-------------------------------- */
+.scrub-transition {
+  font-family: "PT Sans", sans-serif;
+  color: #2c1a32;
+}
+.scrub-transition h1, .scrub-transition h2 {
+  font-family: "Sigmar One", serif;
+  margin-bottom: .4em;
+  font-size: 4rem;
+}
+.scrub-transition .cd-btn {
+  background: #b24160;
+  color: #ffffff;
+  border-radius: 50em;
+}
+.scrub-transition .cd-main-content {
+  background: #ffbc59;
+}
+.scrub-transition .cd-modal {
+  background: #633b63;
+}
+.scrub-transition .cd-modal .modal-content {
+  color: #ffffff;
+}
+.scrub-transition .cd-modal .modal-close::before,
+.scrub-transition .cd-modal .modal-close::after {
+  background: #ffffff;
+}
+.scrub-transition .cd-modal .modal-close {
+  background: #543254;
+}
+.scrub-transition .cd-modal .modal-close:hover {
+  background: #452945;
+}
+.scrub-transition .cd-transition-layer .bg-layer {
+  /* sprite composed of 25 frames */
+  width: 2500%;
+  background-image: url(../img/scrub.png);
+}
+.scrub-transition .cd-transition-layer.opening .bg-layer {
+  -webkit-animation: cd-sequence 0.8s steps(24) forwards;
+          animation: cd-sequence 0.8s steps(24) forwards;
+}
+.scrub-transition .cd-transition-layer.closing .bg-layer {
+  -webkit-animation: cd-sequence 0.8s steps(24) forwards reverse;
+          animation: cd-sequence 0.8s steps(24) forwards reverse;
+}
+@media only screen and (min-width: 768px) {
+  .scrub-transition h1 {
+    font-size: 8rem;
+  }
+  .scrub-transition h2 {
+    font-size: 6rem;
+  }
+}

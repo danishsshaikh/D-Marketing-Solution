@@ -1,0 +1,5 @@
+.turntable{display:inline-block;margin:px;}
+.turntable ul{padding:30px;margin:px;position: sticky}
+.turntable ul li{list-style-type:none;display:none;}
+.turntable ul li img{width:90%;}
+.turntable ul li.active{display:block;}
